@@ -1,0 +1,95 @@
+body{
+    font-family: sans-serif;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    background: rgb(25, 93, 25);
+
+}
+.container a{
+    text-decoration: none;
+}
+.couleur{
+    color: rgba(24, 24, 24, 0.8);
+    font-weight: bold;
+}
+.couleur:hover{
+    color: black;
+    opacity: 1;
+}
+ /*  navbar-collapse */
+ .navbar-collapse{
+     margin-top: 13px;  
+     
+ }
+ .navbar-nav{
+    margin-left: 50px;
+    
+ }
+ .navbar-nav li a{
+     font-size: 23px;
+ }
+ .navbar-nav li a:hover{
+     border-bottom: 2px solid #fff; 
+ }
+ /* btn */
+
+ /* barre de navigation */ 
+.nav>.container-fluid{
+    background: none;
+    margin-left: 25%;
+    margin-top: 50px;
+}
+.nav-tabs>li{
+    margin-right: 20px;
+}
+.nav-tabs>.active{
+    color: black;
+}
+.nav-tabs>li>a{
+    font-weight: bolder;
+    font-size: 20px;
+    border: none;
+    border-radius: 0;
+    color: black;
+}
+.nav-tabs>li>a:hover{
+    background:none;
+    border-bottom: 3px solid rgb(25, 93, 25);
+    
+}
+.nav-tabs{
+margin-left: 0px;
+border-radius: 0px solid #000;
+}
+
+/* footer */
+#footer{
+    background: #333333;
+}
+#footer .container .row h5{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+#footer .container .row p{
+    text-align: center;
+    color: #fff
+}
+#footer .copyright{
+    background: rgb(25, 93, 25);
+
+}
+#footer .copyright .row p{
+    color: #fff;
+    opacity: 0.8;
+    padding-left: 150px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 15px
+
+}
+
