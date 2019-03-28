@@ -1,0 +1,122 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>agribusiness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="reservation.css">
+    <script src="jquery/maman.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+     <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <!-- bouton en tiret -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tiret" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                    <a href="index.html" style="text-decoration:none;">
+                        <h2 style="padding-left:15px; color:rgb(255, 255, 255, 0.8);">Agri<span class="couleur">Business</span></h1>
+                    </a>
+              </div>
+          
+              <!-- barre de navigation -->
+
+              <div class="collapse navbar-collapse" id="tiret">
+                <ul class="nav navbar-nav text-center">
+                        <li><a href="/acceuil">Accueil</a></li>
+                        <li><a href="/produit">Nos produits</a></li>
+                        <li disabled><a href="/" >Commande</a></li>
+                        <li><a href="#footer">Nos partenaires </a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+  <!-- fin de la barre de navigation -->
+ </header>
+
+ <section class="section1">
+        <div class="container-fluid">
+            <div class="img">  
+          <div class="container" style="background:rgb(15, 95, 28);width:650px;">
+            <h1>**** Passer Votre Commande ****</h1>
+            <div class="col-lg-10" >
+              <form action="http://localhost:4000/connexion" method="post" name="form" class="form-group" style="background:rgb(255, 255, 255,0.9);width:600px;">
+                  <div class="form-group col-md-12 col-lg-10" style="margin-top:15px;" >
+                    <label for="nom_commande" class="col-form-label">Nom et Prénoms :</label>
+                    <input type="text" class="form-control" id="nom_commande" name="nom_commande" placeholder="Entrez votre nom et preno">
+                  <span id="nom"></span>
+                  </div>
+
+                  <div class="form-group col-md-12 col-lg-10" style="margin-top:5px;">
+                    <label for="ville_commande" class="col-form-label">Ville :</label>
+                    <input type="text" class="form-control" id="ville_commande" name="ville_commande" placeholder="Entrez votre ville">
+                  </div>
+
+                  <div class="form-group col-md-12 col-lg-10" style="margin-top:5px;">
+                    <label for="contact_commade" class="col-form-label">Contact :</label>
+                    <input type="tel" class="form-control" id="contact_commade" name="contact_commade" placeholder="Entrez votre contact">
+                  </div>
+                  <div class="form-group col-md-12 col-lg-10" style="margin-top:5px;">
+                    <label for="quantite_commade" class="col-form-label">Quantité :</label>
+                    <input type="number" class="form-control" id="quantite_commade" name="quantite_commade" >
+                  </div>
+                  <div class="form-group col-md-12 col-lg-10" style="margin-top:5px;">
+                        <input type="checkbox" id="quantite" name="quantite" >j'accepte les conditions<br><br>
+                     <button type="submit" class="btn btn-success" style="margin-left:50%;" value="add" id="boutton">
+                        <a href="/connexion" style="color:#fff;margin-bottom:8px;">Envoyer</a>
+                        </button>
+                      </div>
+                  <div class="modal-footer" >
+                        
+                    </div>
+                </form>
+              </div>
+          </div>
+      </div>
+    </div>
+ </section>
+
+
+ <footer id="footer">
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                  <h5><strong>A PROPOS</strong></h5>
+                  <p><a href="#"><b>Qui sommes nous</b></a><br></p>
+                  <p><b>Conditions générales de la AgriBusiness</b></p>
+                  <p><b>Mentions légales</b></p><br>
+              </div>
+      
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                  <h5><strong>CONTACTEZ-NOUS</strong> </h5>
+                  <p><b>+225 88 33 12 47 </b></p>
+                  <p><b>Abidjan, port-bouët</b></p>
+                  <p><b>AgriBusiness@gmail.com</b></p><br>
+              </div>
+      
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                  <h5><strong>AIDE ET SERVICE</strong></h5>
+                  <p><b>Besoin d'aide</b></p>
+                  <p><b>livraison partout</b></p>
+                  <p><b>Bons de reductions</b></p><br>
+              </div>
+          </div>
+        </div>
+        <div class="copyright">
+              <div class="row">
+                  <p>Copyright ©2019 <strong>Agri<span style="color:black;">Business</span></strong></p>
+              </div>
+          </div>
+      </footer>
+</body>
+</html>

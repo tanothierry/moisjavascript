@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AgriBussiness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="/jquery/maman.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+<body>
+ <header>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <!-- bouton en tiret -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tiret" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                    <a href="/acceuil" style="text-decoration:none;">
+                        <h2 style="padding-left:15px; color:rgb(255, 255, 255, 0.8);">Agri<span class="couleur">Business</span></h1>
+                    </a>
+              </div>
+          
+              <!-- barre de navigation -->
+
+              <div class="collapse navbar-collapse" id="tiret">
+                <ul class="nav navbar-nav text-center">
+                        <li><a href="/acceuil">Accueil</a></li>
+                        <li><a href="/produit">Nos produits</a></li>
+                        {# <li><a href="/reservaton">Réservation </a></li> #}
+                        <li><a href="#footer">Nos partenaires </a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+  <!-- le texte sur l'image-->
+ 
+ </header>
+
+    <section>
+            <div class="image">
+                <div class="abs"></div>
+                    <div class="container texte">
+                        <h2 class="h2">Transportez vos produits agricoles dans <br>
+                           de bonne conditions</h2>
+                        <a href="#footer">Contactez-nous</a>
+                    </div>
+            </div> 
+    </section>
+
+    <!-- le corps-->
+
+    <section class="corps">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="services">
+                            <h2>Nos services</h2> 
+                        </div>
+                    </div>
+                </div>
+    
+                <div >
+                    <div class="col-md-6 col-lg-6">
+                        <div class="partie1">
+                            <h3 style="text-align:center;">Formation</h3>
+                            <p>Nous vous apportons notre expertissent dans le domaine de l'agriculutre en donnant des formations (modules de cultures vivrières, modules de cultures
+                                Pérennes etc....).
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6 col-lg-6">
+                        <div class="partie2" >
+                            <h3 style="text-align:center;">livraison</h3>
+                            <p>Nous vous livrons touts nos produits 24h/24, 7j/7 partout en Côte d'Ivoire. C'est rapide, fiable et efficace</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Quel produits de notre services-->
+        <section id="produits">
+                <div class="container">
+                    <div class="heading">
+                        <h2>Quelques produits vivriers ?</h2>
+                    </div>
+                    <div class="divider"></div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="#" class="thumbnail" target="_blank">
+                                <img src="/images/cacao.jpg" alt="share" >
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                             <a href="#" class="thumbnail" target="_blank">
+                                <img src="/images/soil-386749__340.jpg" alt="share" >
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#" class="thumbnail" target="_blank">
+                                <img src="images/fruit-3408683__340.jpg" alt=" share" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-sm-4">
+                                <a href="#" class="thumbnail" target="_blank">
+                                    <img src="images/fruit-3247447_960_720.jpg" alt="share" >
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                 <a href="#" class="thumbnail" target="_blank">
+                                    <img src="images/planting-2839128__340.jpg" alt=" share" >
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="#" class="thumbnail" target="_blank">
+                                    <img src="images/ginger-1356623__340.jpg" alt=" share" >
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+        <!-- Formulaire d'abonnement-->
+<section id="abonnez" style="margin-left:13%;margin-top: 50px; margin-bottom: 50px;">
+        <div class="container">
+                <br><br>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap" style="font-size:30px; padding: 0px;">
+                        <a href="#Modal" style="color:#fff;">Inscrivez vous maintenant</a>
+                </button>
+                
+                <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel">Abonnez-vous</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form method="post" action="" id="contact-form" role="form">
+                          <div class="form-group">
+                            <label for="name" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Votre nom email">
+                          </div>
+                          <div class="modal-footer">
+                                <button type="submit" class="btn btn-success"><a href="/acceuil" style="color:#fff;">Envoyer</a></button>
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+</section> 
+
+<footer id="footer">
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                  <h5><strong>A PROPOS</strong></h5>
+                  <p><a href="#"><b>Qui sommes nous</b></a><br></p>
+                  <p><b>Conditions générales de la AgriBusiness</b></p>
+                  <p><b>Mentions légales</b></p><br>
+              </div>
+      
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                  <h5><strong>CONTACTEZ-NOUS</strong> </h5>
+                  <p><b>+225 88 33 12 47 </b></p>
+                  <p><b>Abidjan, port-bouët</b></p>
+                  <p><b>AgriBusiness@gmail.com</b></p><br>
+              </div>
+      
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                  <h5><strong>AIDE ET SERVICE</strong></h5>
+                  <p><b>Besoin d'aide</b></p>
+                  <p><b>livraison partout</b></p>
+                  <p><b>Bons de reductions</b></p><br>
+              </div>
+          </div>
+        </div>
+        <div class="copyright">
+              <div class="row">
+                  <p>Copyright ©2019 <strong>Agri<span style="color:black;">Business</span></strong></p>
+              </div>
+          </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>agribusiness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="produit.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+     <header>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <!-- bouton en tiret -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tiret" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                    <a href="/acceuil" style="text-decoration:none;">
+                        <h2 style="padding-left:15px; color:rgb(255, 255, 255, 0.8);">Agri<span class="couleur">Business</span></h1>
+                    </a>
+              </div>
+          
+              <!-- barre de navigation -->
+
+              <div class="collapse navbar-collapse" id="tiret">
+                <ul class="nav navbar-nav text-center">
+                        <li><a href="/acceuil">Accueil</a></li>
+                        <li><a href="/produit">Nos produits</a></li>
+                        {# <li><a href="#contact">Contacts</a></li> #}
+                        <li><a href="#footer">Nos partenaires </a></li>
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+  <!-- fin de la barre de navigation -->
+ </header>
+
+
+ <section >
+        <div class="container" style="height:680px; width: 100%; left: 0;right:0;">
+                <h2>Carousel Example</h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+              
+                    <div class="item active">
+                      <img src="images/tuscany-428041_1280.jpg" alt="Los Angeles" style="width:100%;height: 600px;">
+                      <div class="carousel-caption">
+                        <h3>La nature</h3>
+                      </div>
+                    </div>
+              
+                    <div class="item">
+                      <img src="images/orange-1995056_1280.jpg" alt="Chicago" style="width:100%;height: 600px;">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                  
+                    <div class="item">
+                      <img src="images/tomatoes-5356_1280.jpg" alt="New York" style="width:100%; height: 600px;">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                
+                  </div>
+              
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>   
+ </section>
+
+ <section class="nav">
+     <div class="container-fluid">
+        <nav id="produit1">
+           <ul class="nav nav-tabs">
+            <li class="active" role="presentation"><a href="#1" data-toggle="tab">Nos produits</a></li>
+            <li  role="presentation"><a href="#2" data-toggle="tab">Fruits</a></li>
+            <li  role="presentation"><a href="#3" data-toggle="tab">Legumes</a></li>
+            <li  role="presentation"><a href="#4" data-toggle="tab">culture vivrière</a></li>
+           </ul>
+        </nav>
+     </div>
+
+<!--section image-->
+     <div class="container">
+        <div class="tab-content">
+            <div class="tab-pane active" id="1">
+                <div class="row" id="bouton">
+                    <div class="col-sm-4 col-md-4" style="height:50px;">
+                        <div class="thumbnail">
+                            <img src="images/fruit-2123166_1280 (1).jpg" alt="images">
+                            <h3 style="padding-left: 20px;">Papaye</h3>
+                            <h4 style="padding-left: 20px;color: rgb(255, 13, 13);font-weight: bolder;" >500 FCFA</h4>
+                            <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap" 
+                            style="margin-left: 30%;float: right;margin-top: -50px;">
+                                <a href="/connexion"  role="button" style="color:#fff;">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Commander
+                            </a></button>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm-4 col-md-4" style="height:50px;">
+                        <div class="thumbnail">
+                            <img src="images/pineapple-3064719_1280.jpg" alt="images">
+                            <h3 style="padding-left: 20px;">Ananas</h3>
+                            <h4 style="padding-left: 20px;color: rgb(255, 13, 13);font-weight: bolder;" >1000 FCFA</h4>
+                            <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap" style="margin-left: 30%;float: right;margin-top: -50px;">
+                                <a href="/connexion"  role="button" style="color:#fff;">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Commander
+                            </a></button>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm-4 col-md-4"  >
+                        <div class="thumbnail">
+                            <img src="images/food-1239241_1280.jpg" alt="images">
+                            <h3 style="padding-left: 20px;">Papaye</h3>
+                            <h4 style="padding-left: 20px;color: rgb(255, 13, 13);font-weight: bolder;" >500 FCFA</h4>
+                            <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap" 
+                            style="margin-left: 30%;float: right;margin-top: -50px;">
+                                <a href="/connexion"  role="button" style="color:#fff;">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Commander
+                            </a></button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="images/manioc-892517__340.jpg" alt="images">
+                             <h3 style="padding-left: 20px;">Manioc</h3>                 
+                                         <h4 style="padding-left: 20px;color: rgb(255, 13, 13);font-weight: bolder;" >1500 FCFA</h4>
+                            <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap" 
+                            style="margin-left: 30%;float: right;margin-top: -50px;">
+                                <a href="/connexion"  role="button" style="color:#fff;">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Commander
+                            </a></button>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="images/albinism-1686669__340.jpg" alt="images">
+                             <h3 style="padding-left: 20px;">Taro</h3>                          
+                                <h4 style="padding-left: 20px;color: rgb(255, 13, 13);font-weight: bolder;" >1200 FCFA</h4>
+                            <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap" 
+                            style="margin-left: 30%;float: right;margin-top: -50px;">
+                                <a href="#"  role="button" style="color:#fff;">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Commander
+                            </a></button>
+                        </div>
+                    </div>
+        
+                      <div class="col-sm-4 col-md-4">
+                              <div class="thumbnail">
+                                  <img src="images/farmer-harvesting-sweet-potato-260nw-498401023.jpg" alt="images">
+                                   <h3 style="padding-left: 20px;">Patate</h3>                            
+                                    <h4 style="padding-left: 20px;color: rgb(255, 13, 13);font-weight: bolder;" >500 FCFA</h4>
+                                  <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap" 
+                                  style="margin-left: 30%;float: right;margin-top: -50px;">
+                                      <a href="/connexion"  role="button" style="color:#fff;">
+                                      <span class="glyphicon glyphicon-shopping-cart"></span> Commander
+                                  </a></button>
+                              </div>
+                          </div>
+                </div>
+            </div>
+        
+        
+        
+            <div class="tab-pane active" id="2">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="images/orange-1995056_1280.jpg" alt="images">
+                             <h3 style="padding-left: 20px;">Orange</h3>                       
+                              <h4 style="padding-left: 20px;color: rgb(255, 13, 13);font-weight: bolder;">400 F
+                            <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap" style="margin-left: 30%;float: right;margin-top: -30px;">
+                                <a href="/connexion"  role="button" style="color:#fff;">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Commander
+                            </a></button>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="images/fruit-1534494_1280.jpg " alt="images">
+                            <h3 style="padding-left: 20px;">Goyave</h3>
+                            <h4 style="padding-left: 20px;color: rgb(255, 13, 13);font-weight: bolder;" >500 FCFA</h4>
+                            <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap"
+                            style="margin-left: 30%;float: right;margin-top: -50px;"> 
+                                <a href="/connexion"  role="button" style="color:#fff;">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Commander
+                            </a></button>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="images/tangerines-1721633_1280.jpg" alt="images">
+                            <h3 style="padding-left: 20px;">Mandarine</h3>
+                            <h4 style="padding-left: 20px;color: rgb(255, 13, 13);font-weight: bolder;" >800 FCFA</h4>
+                            <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap" 
+                            style="margin-left: 30%;float: right;margin-top: -50px;">
+                                <a href="/connexion"  role="button" style="color:#fff;">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Commander
+                            </a></button>
+                        </div>
+                    </div>
+              </div>
+            </div>  
+
+            <div class="tab-pane active" id="3">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="images/tomatoes-5356_1280.jpg" alt="images">
+                            <h3 style="padding-left: 20px;">Tomate</h3>
+                            <h4 style="padding-left: 20px;color: rgb(255, 13, 13);font-weight: bolder;" >300 FCFA</h4>
+                            <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap" 
+                            style="margin-left: 30%;float: right;margin-top: -50px;">
+                                <a href="/connexion"  role="button" style="color:#fff;">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Commander
+                            </a></button>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="images/chili-2282_1280.jpg" alt="images" style="width:1280px; height:auto;">
+                            <h3 style="padding-left: 20px;">Piment</h3>
+                            <h4 style="padding-left: 20px;color: rgb(255, 13, 13);font-weight: bolder;" >350 FCFA</h4>
+                            <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap"
+                            style="margin-left: 30%;float: right;margin-top: -50px;">
+                                <a href="/connexion"  role="button" style="color:#fff;">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Commander
+                            </a></button>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="images/images.jpeg" alt="images" style="width:1280px; height:auto;">
+                            <h3 style="padding-left: 20px;">Gombo</h3>
+                            <h4 style="padding-left: 20px;color: rgb(255, 13, 13);font-weight: bolder;" >450 FCFA</h4>
+                            <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#Modal" data-whatever="@getbootstrap" 
+                            style="margin-left: 30%;float: right;margin-top: -50px;">
+                                <a href="/connexion"  role="button" style="color:#fff;">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Commander
+                            </a></button>
+                        </div>
+                    </div>
+              </div>
+            </div> 
+
+<!--modal commander-->
+<div class="container">    
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h3 class="modal-title text-center" id="exampleModalLabel">Passer votre commande</h3>
+              </div>
+              <div class="modal-body">
+                <form method="post" action="" id="contact-form" role="form">
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">Nom et Prénoms :</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Entrez votre nom et preno">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="Ville" class="col-form-label">Ville :</label>
+                    <input type="text" class="form-control" id="ville" name="ville" placeholder="Entrez votre ville">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact" class="col-form-label">Contact :</label>
+                    <input type="tel" class="form-control" id="tel" name="tel" placeholder="Entrez votre contact">
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-form-label">Quantité :</label>
+                    <input type="number" class="form-control" id="quantite" name="quantite" >
+                  </div>
+                  <div class="form-group">
+                        <input type="checkbox" id="quantite" name="quantite" >j'accepte les conditions
+                      </div>
+                  <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary"><a href="produit.html" style="color:#fff;">Envoyer</a></button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>  
+     </div>
+</section>
+
+
+
+<footer id="footer">
+    <div class="container" style="backrgound:green;">
+      <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+              <h5><strong>A PROPOS</strong></h5>
+              <p><a href="#"><b>Qui sommes nous</b></a><br></p>
+              <p><b>Conditions générales de la AgriBusiness</b></p>
+              <p><b>Mentions légales</b></p><br>
+          </div>
+  
+          <div class="col-sm-12 col-md-4 col-lg-4">
+              <h5><strong>CONTACTEZ-NOUS</strong> </h5>
+              <p><b>+225 88 33 12 47 </b></p>
+              <p><b>Abidjan, port-bouët</b></p>
+              <p><b>AgriBusiness@gmail.com</b></p><br>
+          </div>
+  
+          <div class="col-sm-12 col-md-4 col-lg-4">
+              <h5><strong>AIDE ET SERVICE</strong></h5>
+              <p><b>Besoin d'aide</b></p>
+              <p><b>livraison partout</b></p>
+              <p><b>Bons de reductions</b></p><br>
+          </div>
+      </div>
+    </div>
+    <div class="copyright">
+          <div class="row">
+              <p>Copyright ©2019 <strong>Agri<span style="color:black;">Business</span></strong></p>
+          </div>
+      </div>
+  </footer>
+
+</body>
+</html>
